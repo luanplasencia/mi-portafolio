@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
@@ -91,6 +95,24 @@ nav a {
   border-radius: 8px;
   padding: 40px 20px;
   text-align: center;
+}
+
+.contact, footer {
+  text-align: center;
+  padding: 24px;
+}
+
+.project {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
